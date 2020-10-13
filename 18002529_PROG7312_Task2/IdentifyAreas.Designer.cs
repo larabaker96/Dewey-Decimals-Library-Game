@@ -86,6 +86,7 @@
             // 
             this.txtInstruction.Location = new System.Drawing.Point(8, 32);
             this.txtInstruction.Name = "txtInstruction";
+            this.txtInstruction.ReadOnly = true;
             this.txtInstruction.Size = new System.Drawing.Size(386, 20);
             this.txtInstruction.TabIndex = 19;
             this.txtInstruction.Text = "Choose the correct category from the box next to the call number";
@@ -229,6 +230,7 @@
             // 
             this.txtAnswer4.Location = new System.Drawing.Point(105, 156);
             this.txtAnswer4.Name = "txtAnswer4";
+            this.txtAnswer4.ReadOnly = true;
             this.txtAnswer4.Size = new System.Drawing.Size(234, 20);
             this.txtAnswer4.TabIndex = 38;
             // 
@@ -236,6 +238,7 @@
             // 
             this.txtAnswer3.Location = new System.Drawing.Point(105, 107);
             this.txtAnswer3.Name = "txtAnswer3";
+            this.txtAnswer3.ReadOnly = true;
             this.txtAnswer3.Size = new System.Drawing.Size(234, 20);
             this.txtAnswer3.TabIndex = 37;
             // 
@@ -243,6 +246,7 @@
             // 
             this.txtAnswer2.Location = new System.Drawing.Point(105, 64);
             this.txtAnswer2.Name = "txtAnswer2";
+            this.txtAnswer2.ReadOnly = true;
             this.txtAnswer2.Size = new System.Drawing.Size(234, 20);
             this.txtAnswer2.TabIndex = 36;
             // 
@@ -250,6 +254,7 @@
             // 
             this.txtAnswer1.Location = new System.Drawing.Point(105, 24);
             this.txtAnswer1.Name = "txtAnswer1";
+            this.txtAnswer1.ReadOnly = true;
             this.txtAnswer1.Size = new System.Drawing.Size(234, 20);
             this.txtAnswer1.TabIndex = 35;
             // 
@@ -338,6 +343,7 @@
             this.txtXP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtXP.Location = new System.Drawing.Point(302, 337);
             this.txtXP.Name = "txtXP";
+            this.txtXP.ReadOnly = true;
             this.txtXP.Size = new System.Drawing.Size(111, 25);
             this.txtXP.TabIndex = 28;
             // 

@@ -96,6 +96,7 @@
             this.txtXP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtXP.Location = new System.Drawing.Point(367, 413);
             this.txtXP.Name = "txtXP";
+            this.txtXP.ReadOnly = true;
             this.txtXP.Size = new System.Drawing.Size(111, 25);
             this.txtXP.TabIndex = 30;
             // 

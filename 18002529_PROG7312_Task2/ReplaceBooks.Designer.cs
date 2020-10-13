@@ -229,6 +229,7 @@
             this.txtXP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtXP.Location = new System.Drawing.Point(324, 418);
             this.txtXP.Name = "txtXP";
+            this.txtXP.ReadOnly = true;
             this.txtXP.Size = new System.Drawing.Size(111, 25);
             this.txtXP.TabIndex = 15;
             // 
@@ -246,6 +247,7 @@
             // 
             this.txtInstruction.Location = new System.Drawing.Point(49, 31);
             this.txtInstruction.Name = "txtInstruction";
+            this.txtInstruction.ReadOnly = true;
             this.txtInstruction.Size = new System.Drawing.Size(386, 20);
             this.txtInstruction.TabIndex = 17;
             this.txtInstruction.Text = "Drag the boxes on the left to the white box next to it to sort the call numbers";
