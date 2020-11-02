@@ -72,6 +72,8 @@
     <Compile Include="ReplaceBooks.Designer.cs">
       <DependentUpon>ReplaceBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tree.cs" />
+    <Compile Include="TreeNode.cs" />
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </EmbeddedResource>
