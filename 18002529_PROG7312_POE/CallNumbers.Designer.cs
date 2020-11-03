@@ -50,6 +50,9 @@
             this.panelLvl3 = new System.Windows.Forms.Panel();
             this.panelLvl2 = new System.Windows.Forms.Panel();
             this.panelLvl1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelLvl3.SuspendLayout();
             this.panelLvl2.SuspendLayout();
             this.panelLvl1.SuspendLayout();
@@ -58,7 +61,7 @@
             // txtFeedback
             // 
             this.txtFeedback.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFeedback.Location = new System.Drawing.Point(49, 301);
+            this.txtFeedback.Location = new System.Drawing.Point(52, 382);
             this.txtFeedback.Name = "txtFeedback";
             this.txtFeedback.ReadOnly = true;
             this.txtFeedback.Size = new System.Drawing.Size(622, 25);
@@ -69,7 +72,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(271, 339);
+            this.label5.Location = new System.Drawing.Point(273, 416);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 19);
             this.label5.TabIndex = 34;
@@ -78,7 +81,7 @@
             // txtXP
             // 
             this.txtXP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtXP.Location = new System.Drawing.Point(305, 336);
+            this.txtXP.Location = new System.Drawing.Point(307, 413);
             this.txtXP.Name = "txtXP";
             this.txtXP.ReadOnly = true;
             this.txtXP.Size = new System.Drawing.Size(111, 25);
@@ -239,7 +242,7 @@
             this.panelLvl3.Controls.Add(this.btnLevel3D);
             this.panelLvl3.Controls.Add(this.btnLevel3B);
             this.panelLvl3.Controls.Add(this.btnLevel3C);
-            this.panelLvl3.Location = new System.Drawing.Point(545, 95);
+            this.panelLvl3.Location = new System.Drawing.Point(545, 142);
             this.panelLvl3.Name = "panelLvl3";
             this.panelLvl3.Size = new System.Drawing.Size(161, 200);
             this.panelLvl3.TabIndex = 50;
@@ -251,7 +254,7 @@
             this.panelLvl2.Controls.Add(this.btnLevel2B);
             this.panelLvl2.Controls.Add(this.btnLevel2D);
             this.panelLvl2.Controls.Add(this.btnLevel2C);
-            this.panelLvl2.Location = new System.Drawing.Point(279, 95);
+            this.panelLvl2.Location = new System.Drawing.Point(277, 142);
             this.panelLvl2.Name = "panelLvl2";
             this.panelLvl2.Size = new System.Drawing.Size(161, 200);
             this.panelLvl2.TabIndex = 51;
@@ -263,18 +266,54 @@
             this.panelLvl1.Controls.Add(this.btnLevel1B);
             this.panelLvl1.Controls.Add(this.btnLevel1C);
             this.panelLvl1.Controls.Add(this.btnLevel1D);
-            this.panelLvl1.Location = new System.Drawing.Point(12, 95);
+            this.panelLvl1.Location = new System.Drawing.Point(12, 142);
             this.panelLvl1.Name = "panelLvl1";
             this.panelLvl1.Size = new System.Drawing.Size(161, 200);
             this.panelLvl1.TabIndex = 52;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(64, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 19);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Level 1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(334, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 19);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Level 2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(598, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 19);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "Level 3";
             // 
             // CallNumbers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::_18002529_PROG7312_Task2.Properties.Resources.bookworm;
+            this.BackgroundImage = global::_18002529_PROG7312_POE.Properties.Resources.bookworm;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(718, 374);
+            this.ClientSize = new System.Drawing.Size(718, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panelLvl1);
             this.Controls.Add(this.panelLvl2);
             this.Controls.Add(this.panelLvl3);
@@ -319,5 +358,8 @@
         private System.Windows.Forms.Panel panelLvl3;
         private System.Windows.Forms.Panel panelLvl2;
         private System.Windows.Forms.Panel panelLvl1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }

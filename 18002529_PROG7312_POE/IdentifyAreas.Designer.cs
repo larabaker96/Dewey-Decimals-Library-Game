@@ -351,7 +351,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::_18002529_PROG7312_Task2.Properties.Resources.bookworm;
+            this.BackgroundImage = global::_18002529_PROG7312_POE.Properties.Resources.bookworm;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(718, 374);
             this.Controls.Add(this.txtFeedback);
