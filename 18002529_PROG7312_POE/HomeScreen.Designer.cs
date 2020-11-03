@@ -61,7 +61,6 @@
             // 
             // btnCallNumbers
             // 
-            this.btnCallNumbers.Enabled = false;
             this.btnCallNumbers.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCallNumbers.Location = new System.Drawing.Point(585, 317);
             this.btnCallNumbers.Name = "btnCallNumbers";

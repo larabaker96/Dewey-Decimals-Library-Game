@@ -74,6 +74,9 @@
     </Compile>
     <Compile Include="Tree.cs" />
     <Compile Include="TreeNode.cs" />
+    <EmbeddedResource Include="CallNumbers.resx">
+      <DependentUpon>CallNumbers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </EmbeddedResource>
