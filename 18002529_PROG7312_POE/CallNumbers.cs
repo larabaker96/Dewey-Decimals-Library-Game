@@ -107,6 +107,7 @@ namespace _18002529_PROG7312_POE
 
                 if (!(callNumber % 10 == 0))
                 {
+                    //Checks if the question exists using tree search
                     question = deweyDecimalsTree.searchLvl3(callNumber);
 
                     if ((question != null) && (!lstQuestions.Contains(question)))
@@ -125,7 +126,7 @@ namespace _18002529_PROG7312_POE
         {
             callDescriptions.Clear();
 
-            if(currentQuestion >= 0 && currentQuestion < 10)
+            if(currentQuestion >= 0 && currentQuestion <= 10)
             {
                 txtQuestion.Text = lstQuestions[currentQuestion].description;
 
@@ -160,12 +161,16 @@ namespace _18002529_PROG7312_POE
                             }
                         }
 
+                        callDescriptions.Sort();
+
+                        //Sorts answers & Populates answer buttons
                         for (int i = 0; i < callDescriptions.Count; i++)
                         {
                             Button btnAnswer = panelLvl1.Controls.Find("btnLevel1_" + (i + 1), false).FirstOrDefault() as Button;
                             btnAnswer.Text = callDescriptions[i];
                         }
                         break;
+
                     case 2:
                         callDescriptions.Clear();
 
@@ -184,14 +189,10 @@ namespace _18002529_PROG7312_POE
                         callDescriptions.Add(deweyDecimalsTree.searchLvl2(level2Category).callNumberDesc());
 
                         Random randomL2 = new Random();
-
+                        int randomStart = Convert.ToInt32(level2Category.ToString().Substring(0,1)+ "0");
                         while (callDescriptions.Count != 4)
                         {
-                            int r = randomL2.Next(94) * 10;
-                            if(r < 100)
-                            {
-                                r = r * 10;
-                            }
+                            int r = randomL2.Next(randomStart, randomStart+9) * 10;
 
                             DeweyObject obj = deweyDecimalsTree.searchLvl2(r);
 
@@ -201,9 +202,12 @@ namespace _18002529_PROG7312_POE
                                 if (!callDescriptions.Contains(descript))
                                 {
                                     callDescriptions.Add(descript);
-                                }
-                            }                        
+                                };
+                            }
                         }
+
+                        //Sorts answers & Populates answer buttons
+                        callDescriptions.Sort();
 
                         for (int i = 0; i < callDescriptions.Count; i++)
                         {
@@ -220,10 +224,12 @@ namespace _18002529_PROG7312_POE
                         callDescriptions.Add(lstQuestions[currentQuestion].callNumberDesc());
 
                         Random randomLvl3 = new Random();
+                        int randStart = Convert.ToInt32(lstQuestions[currentQuestion].callNumberDesc().Substring(0, 2)+"0");
+                        int randEnd = Convert.ToInt32(lstQuestions[currentQuestion].callNumberDesc().Substring(0, 2) + "9");
 
-                        while(callDescriptions.Count != 4)
+                        while (callDescriptions.Count != 4)
                         {
-                            int z = randomLvl3.Next(940);
+                            int z = randomLvl3.Next(randStart, randEnd);
 
                             DeweyObject obj = deweyDecimalsTree.searchLvl3(z);
 
@@ -237,6 +243,9 @@ namespace _18002529_PROG7312_POE
                             }
                         }
 
+                        //Sorts answers & populates answer buttons
+                        callDescriptions.Sort();
+
                         for (int i = 0; i < callDescriptions.Count; i++)
                         {
                             Button btnAnswer = panelLvl3.Controls.Find("btnLevel3_" + (i + 1), false).FirstOrDefault() as Button;
@@ -245,9 +254,7 @@ namespace _18002529_PROG7312_POE
 
                         panelLvl3.Visible = true;
                         break;
-
-                }
-                
+                }               
             }
         }
 
@@ -259,6 +266,7 @@ namespace _18002529_PROG7312_POE
                 case 1:
                     string questionCategory = lstQuestions[currentQuestion].callNumbers.ToString().Substring(0,1);
 
+                    //Checks tree level 1 for main category
                     if (btnText.Equals(deweyDecimalsTree.Root.Children[Convert.ToInt32(questionCategory)].Data.callNumberDesc()))
                     {
                         txtFeedback.Text = "Correct! On to the next level!";
@@ -287,6 +295,7 @@ namespace _18002529_PROG7312_POE
                         Convert.ToInt32(lstQuestions[currentQuestion].callNumbers.ToString().Substring(0, 2));
                     }
 
+                    //Checks tree level 2 for sub category
                     if (btnText.Equals(deweyDecimalsTree.searchLvl2(level2Category).callNumberDesc()))
                     {
                         txtFeedback.Text = "Correct! On to the next level!";
@@ -308,8 +317,17 @@ namespace _18002529_PROG7312_POE
                     {
                         GlobalXP.XP = GlobalXP.XP + 10;
                         txtXP.Text = GlobalXP.XP + " xp";
-                        txtFeedback.Text = "Wow you are clever! Next Question!";
+
+                        if(currentQuestion == 10)
+                        {
+                            txtFeedback.Text = "Congrats! Lets Play Again!";
+                        }
+                        else
+                        {
+                            txtFeedback.Text = "Wow you are clever! Next Question!";
+                        }
                         currentQuestion++;
+                        treeLevel = 1;
                         populateAnswers();
 
                         panelLvl2.Visible = false;

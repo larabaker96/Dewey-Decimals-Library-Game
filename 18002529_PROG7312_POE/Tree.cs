@@ -22,21 +22,7 @@ namespace _18002529_PROG7312_POE
             }
         } 
 
-        public DeweyObject searchLvl1(int data)
-        {
-            if (HasChildren(Root))
-            {
-                foreach(TreeNode node in Root.Children)
-                {
-                    if(node.Data.callNumbers == data)
-                    {
-                        return node.Data;
-                    }
-                }
-            }
-            return null;
-        }
-
+        //Checks call number subcategory
         public DeweyObject searchLvl2(int data)
         {
             if (HasChildren(Root))
@@ -58,6 +44,7 @@ namespace _18002529_PROG7312_POE
             return null;
         }
 
+        //Dives deep into tree to check exact call number categories
         public DeweyObject searchLvl3(int data)
         {
             if (HasChildren(Root))
