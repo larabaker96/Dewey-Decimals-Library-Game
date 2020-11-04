@@ -83,6 +83,7 @@
     <Compile Include="IdentifyAreas.Designer.cs">
       <DependentUpon>IdentifyAreas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Level1Categories.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceBooks.cs">

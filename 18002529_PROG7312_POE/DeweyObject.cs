@@ -10,11 +10,11 @@ namespace _18002529_PROG7312_POE
     {
         public int callNumbers { get; set; }
 
-        public string Description { get; set; }
+        public string description { get; set; }
 
         public string callNumberDesc()
         {
-            return callNumbers + " - " + Description;
+            return callNumbers + " - " + description;
         }
 
     }

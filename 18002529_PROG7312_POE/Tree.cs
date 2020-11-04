@@ -10,7 +10,7 @@ namespace _18002529_PROG7312_POE
     {
         public TreeNode Root { get; set; }
 
-        private bool HasChildren(TreeNode node)
+        public bool HasChildren(TreeNode node)
         {
             if(node.Children != null)
             {
@@ -57,5 +57,7 @@ namespace _18002529_PROG7312_POE
             }
             return null;
         }
+
+
     }
 }

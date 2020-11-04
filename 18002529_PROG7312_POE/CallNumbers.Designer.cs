@@ -35,18 +35,18 @@
             this.txtInstruction = new System.Windows.Forms.TextBox();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.txtQuestion = new System.Windows.Forms.TextBox();
-            this.btnLevel1A = new System.Windows.Forms.Button();
-            this.btnLevel1B = new System.Windows.Forms.Button();
-            this.btnLevel1C = new System.Windows.Forms.Button();
-            this.btnLevel1D = new System.Windows.Forms.Button();
-            this.btnLevel2D = new System.Windows.Forms.Button();
-            this.btnLevel2C = new System.Windows.Forms.Button();
-            this.btnLevel2B = new System.Windows.Forms.Button();
-            this.btnLevel2A = new System.Windows.Forms.Button();
-            this.btnLevel3D = new System.Windows.Forms.Button();
-            this.btnLevel3C = new System.Windows.Forms.Button();
-            this.btnLevel3B = new System.Windows.Forms.Button();
-            this.btnLevel3A = new System.Windows.Forms.Button();
+            this.btnLevel1_1 = new System.Windows.Forms.Button();
+            this.btnLevel1_2 = new System.Windows.Forms.Button();
+            this.btnLevel1_3 = new System.Windows.Forms.Button();
+            this.btnLevel1_4 = new System.Windows.Forms.Button();
+            this.btnLevel2_4 = new System.Windows.Forms.Button();
+            this.btnLevel2_3 = new System.Windows.Forms.Button();
+            this.btnLevel2_2 = new System.Windows.Forms.Button();
+            this.btnLevel2_1 = new System.Windows.Forms.Button();
+            this.btnLevel3_4 = new System.Windows.Forms.Button();
+            this.btnLevel3_3 = new System.Windows.Forms.Button();
+            this.btnLevel3_2 = new System.Windows.Forms.Button();
+            this.btnLevel3_1 = new System.Windows.Forms.Button();
             this.panelLvl3 = new System.Windows.Forms.Panel();
             this.panelLvl2 = new System.Windows.Forms.Panel();
             this.panelLvl1 = new System.Windows.Forms.Panel();
@@ -127,121 +127,121 @@
             this.txtQuestion.TabIndex = 37;
             this.txtQuestion.Text = "Call Number Description";
             // 
-            // btnLevel1A
+            // btnLevel1_1
             // 
-            this.btnLevel1A.Location = new System.Drawing.Point(0, 0);
-            this.btnLevel1A.Name = "btnLevel1A";
-            this.btnLevel1A.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel1A.TabIndex = 38;
-            this.btnLevel1A.Text = "Level1 A";
-            this.btnLevel1A.UseVisualStyleBackColor = true;
+            this.btnLevel1_1.Location = new System.Drawing.Point(0, 0);
+            this.btnLevel1_1.Name = "btnLevel1_1";
+            this.btnLevel1_1.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel1_1.TabIndex = 38;
+            this.btnLevel1_1.Text = "Level1 A";
+            this.btnLevel1_1.UseVisualStyleBackColor = true;
             // 
-            // btnLevel1B
+            // btnLevel1_2
             // 
-            this.btnLevel1B.Location = new System.Drawing.Point(0, 52);
-            this.btnLevel1B.Name = "btnLevel1B";
-            this.btnLevel1B.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel1B.TabIndex = 39;
-            this.btnLevel1B.Text = "Level1 B";
-            this.btnLevel1B.UseVisualStyleBackColor = true;
+            this.btnLevel1_2.Location = new System.Drawing.Point(0, 52);
+            this.btnLevel1_2.Name = "btnLevel1_2";
+            this.btnLevel1_2.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel1_2.TabIndex = 39;
+            this.btnLevel1_2.Text = "Level1 B";
+            this.btnLevel1_2.UseVisualStyleBackColor = true;
             // 
-            // btnLevel1C
+            // btnLevel1_3
             // 
-            this.btnLevel1C.Location = new System.Drawing.Point(0, 103);
-            this.btnLevel1C.Name = "btnLevel1C";
-            this.btnLevel1C.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel1C.TabIndex = 40;
-            this.btnLevel1C.Text = "Level1 C";
-            this.btnLevel1C.UseVisualStyleBackColor = true;
+            this.btnLevel1_3.Location = new System.Drawing.Point(0, 103);
+            this.btnLevel1_3.Name = "btnLevel1_3";
+            this.btnLevel1_3.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel1_3.TabIndex = 40;
+            this.btnLevel1_3.Text = "Level1 C";
+            this.btnLevel1_3.UseVisualStyleBackColor = true;
             // 
-            // btnLevel1D
+            // btnLevel1_4
             // 
-            this.btnLevel1D.Location = new System.Drawing.Point(0, 154);
-            this.btnLevel1D.Name = "btnLevel1D";
-            this.btnLevel1D.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel1D.TabIndex = 41;
-            this.btnLevel1D.Text = "Level1 D";
-            this.btnLevel1D.UseVisualStyleBackColor = true;
+            this.btnLevel1_4.Location = new System.Drawing.Point(0, 154);
+            this.btnLevel1_4.Name = "btnLevel1_4";
+            this.btnLevel1_4.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel1_4.TabIndex = 41;
+            this.btnLevel1_4.Text = "Level1 D";
+            this.btnLevel1_4.UseVisualStyleBackColor = true;
             // 
-            // btnLevel2D
+            // btnLevel2_4
             // 
-            this.btnLevel2D.Location = new System.Drawing.Point(0, 154);
-            this.btnLevel2D.Name = "btnLevel2D";
-            this.btnLevel2D.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel2D.TabIndex = 45;
-            this.btnLevel2D.Text = "Level2 D";
-            this.btnLevel2D.UseVisualStyleBackColor = true;
+            this.btnLevel2_4.Location = new System.Drawing.Point(0, 154);
+            this.btnLevel2_4.Name = "btnLevel2_4";
+            this.btnLevel2_4.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel2_4.TabIndex = 45;
+            this.btnLevel2_4.Text = "Level2 D";
+            this.btnLevel2_4.UseVisualStyleBackColor = true;
             // 
-            // btnLevel2C
+            // btnLevel2_3
             // 
-            this.btnLevel2C.Location = new System.Drawing.Point(0, 103);
-            this.btnLevel2C.Name = "btnLevel2C";
-            this.btnLevel2C.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel2C.TabIndex = 44;
-            this.btnLevel2C.Text = "Level2 C";
-            this.btnLevel2C.UseVisualStyleBackColor = true;
+            this.btnLevel2_3.Location = new System.Drawing.Point(0, 103);
+            this.btnLevel2_3.Name = "btnLevel2_3";
+            this.btnLevel2_3.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel2_3.TabIndex = 44;
+            this.btnLevel2_3.Text = "Level2 C";
+            this.btnLevel2_3.UseVisualStyleBackColor = true;
             // 
-            // btnLevel2B
+            // btnLevel2_2
             // 
-            this.btnLevel2B.Location = new System.Drawing.Point(0, 52);
-            this.btnLevel2B.Name = "btnLevel2B";
-            this.btnLevel2B.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel2B.TabIndex = 43;
-            this.btnLevel2B.Text = "Level2 B";
-            this.btnLevel2B.UseVisualStyleBackColor = true;
+            this.btnLevel2_2.Location = new System.Drawing.Point(0, 52);
+            this.btnLevel2_2.Name = "btnLevel2_2";
+            this.btnLevel2_2.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel2_2.TabIndex = 43;
+            this.btnLevel2_2.Text = "Level2 B";
+            this.btnLevel2_2.UseVisualStyleBackColor = true;
             // 
-            // btnLevel2A
+            // btnLevel2_1
             // 
-            this.btnLevel2A.Location = new System.Drawing.Point(0, 0);
-            this.btnLevel2A.Name = "btnLevel2A";
-            this.btnLevel2A.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel2A.TabIndex = 42;
-            this.btnLevel2A.Text = "Level2 A";
-            this.btnLevel2A.UseVisualStyleBackColor = true;
+            this.btnLevel2_1.Location = new System.Drawing.Point(0, 0);
+            this.btnLevel2_1.Name = "btnLevel2_1";
+            this.btnLevel2_1.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel2_1.TabIndex = 42;
+            this.btnLevel2_1.Text = "Level2 A";
+            this.btnLevel2_1.UseVisualStyleBackColor = true;
             // 
-            // btnLevel3D
+            // btnLevel3_4
             // 
-            this.btnLevel3D.Location = new System.Drawing.Point(0, 154);
-            this.btnLevel3D.Name = "btnLevel3D";
-            this.btnLevel3D.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel3D.TabIndex = 49;
-            this.btnLevel3D.Text = "Level3 D";
-            this.btnLevel3D.UseVisualStyleBackColor = true;
+            this.btnLevel3_4.Location = new System.Drawing.Point(0, 154);
+            this.btnLevel3_4.Name = "btnLevel3_4";
+            this.btnLevel3_4.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel3_4.TabIndex = 49;
+            this.btnLevel3_4.Text = "Level3 D";
+            this.btnLevel3_4.UseVisualStyleBackColor = true;
             // 
-            // btnLevel3C
+            // btnLevel3_3
             // 
-            this.btnLevel3C.Location = new System.Drawing.Point(0, 103);
-            this.btnLevel3C.Name = "btnLevel3C";
-            this.btnLevel3C.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel3C.TabIndex = 48;
-            this.btnLevel3C.Text = "Level3 C";
-            this.btnLevel3C.UseVisualStyleBackColor = true;
+            this.btnLevel3_3.Location = new System.Drawing.Point(0, 103);
+            this.btnLevel3_3.Name = "btnLevel3_3";
+            this.btnLevel3_3.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel3_3.TabIndex = 48;
+            this.btnLevel3_3.Text = "Level3 C";
+            this.btnLevel3_3.UseVisualStyleBackColor = true;
             // 
-            // btnLevel3B
+            // btnLevel3_2
             // 
-            this.btnLevel3B.Location = new System.Drawing.Point(0, 52);
-            this.btnLevel3B.Name = "btnLevel3B";
-            this.btnLevel3B.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel3B.TabIndex = 47;
-            this.btnLevel3B.Text = "Level3 B";
-            this.btnLevel3B.UseVisualStyleBackColor = true;
+            this.btnLevel3_2.Location = new System.Drawing.Point(0, 52);
+            this.btnLevel3_2.Name = "btnLevel3_2";
+            this.btnLevel3_2.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel3_2.TabIndex = 47;
+            this.btnLevel3_2.Text = "Level3 B";
+            this.btnLevel3_2.UseVisualStyleBackColor = true;
             // 
-            // btnLevel3A
+            // btnLevel3_1
             // 
-            this.btnLevel3A.Location = new System.Drawing.Point(0, 0);
-            this.btnLevel3A.Name = "btnLevel3A";
-            this.btnLevel3A.Size = new System.Drawing.Size(161, 46);
-            this.btnLevel3A.TabIndex = 46;
-            this.btnLevel3A.Text = "Level3 A";
-            this.btnLevel3A.UseVisualStyleBackColor = true;
+            this.btnLevel3_1.Location = new System.Drawing.Point(0, 0);
+            this.btnLevel3_1.Name = "btnLevel3_1";
+            this.btnLevel3_1.Size = new System.Drawing.Size(161, 46);
+            this.btnLevel3_1.TabIndex = 46;
+            this.btnLevel3_1.Text = "Level3 A";
+            this.btnLevel3_1.UseVisualStyleBackColor = true;
             // 
             // panelLvl3
             // 
             this.panelLvl3.BackColor = System.Drawing.Color.Transparent;
-            this.panelLvl3.Controls.Add(this.btnLevel3A);
-            this.panelLvl3.Controls.Add(this.btnLevel3D);
-            this.panelLvl3.Controls.Add(this.btnLevel3B);
-            this.panelLvl3.Controls.Add(this.btnLevel3C);
+            this.panelLvl3.Controls.Add(this.btnLevel3_1);
+            this.panelLvl3.Controls.Add(this.btnLevel3_4);
+            this.panelLvl3.Controls.Add(this.btnLevel3_2);
+            this.panelLvl3.Controls.Add(this.btnLevel3_3);
             this.panelLvl3.Location = new System.Drawing.Point(545, 142);
             this.panelLvl3.Name = "panelLvl3";
             this.panelLvl3.Size = new System.Drawing.Size(161, 200);
@@ -250,10 +250,10 @@
             // panelLvl2
             // 
             this.panelLvl2.BackColor = System.Drawing.Color.Transparent;
-            this.panelLvl2.Controls.Add(this.btnLevel2A);
-            this.panelLvl2.Controls.Add(this.btnLevel2B);
-            this.panelLvl2.Controls.Add(this.btnLevel2D);
-            this.panelLvl2.Controls.Add(this.btnLevel2C);
+            this.panelLvl2.Controls.Add(this.btnLevel2_1);
+            this.panelLvl2.Controls.Add(this.btnLevel2_2);
+            this.panelLvl2.Controls.Add(this.btnLevel2_4);
+            this.panelLvl2.Controls.Add(this.btnLevel2_3);
             this.panelLvl2.Location = new System.Drawing.Point(277, 142);
             this.panelLvl2.Name = "panelLvl2";
             this.panelLvl2.Size = new System.Drawing.Size(161, 200);
@@ -262,10 +262,10 @@
             // panelLvl1
             // 
             this.panelLvl1.BackColor = System.Drawing.Color.Transparent;
-            this.panelLvl1.Controls.Add(this.btnLevel1A);
-            this.panelLvl1.Controls.Add(this.btnLevel1B);
-            this.panelLvl1.Controls.Add(this.btnLevel1C);
-            this.panelLvl1.Controls.Add(this.btnLevel1D);
+            this.panelLvl1.Controls.Add(this.btnLevel1_1);
+            this.panelLvl1.Controls.Add(this.btnLevel1_2);
+            this.panelLvl1.Controls.Add(this.btnLevel1_3);
+            this.panelLvl1.Controls.Add(this.btnLevel1_4);
             this.panelLvl1.Location = new System.Drawing.Point(12, 142);
             this.panelLvl1.Name = "panelLvl1";
             this.panelLvl1.Size = new System.Drawing.Size(161, 200);
@@ -343,18 +343,18 @@
         private System.Windows.Forms.TextBox txtInstruction;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.TextBox txtQuestion;
-        private System.Windows.Forms.Button btnLevel1A;
-        private System.Windows.Forms.Button btnLevel1B;
-        private System.Windows.Forms.Button btnLevel1C;
-        private System.Windows.Forms.Button btnLevel1D;
-        private System.Windows.Forms.Button btnLevel2D;
-        private System.Windows.Forms.Button btnLevel2C;
-        private System.Windows.Forms.Button btnLevel2B;
-        private System.Windows.Forms.Button btnLevel2A;
-        private System.Windows.Forms.Button btnLevel3D;
-        private System.Windows.Forms.Button btnLevel3C;
-        private System.Windows.Forms.Button btnLevel3B;
-        private System.Windows.Forms.Button btnLevel3A;
+        private System.Windows.Forms.Button btnLevel1_1;
+        private System.Windows.Forms.Button btnLevel1_2;
+        private System.Windows.Forms.Button btnLevel1_3;
+        private System.Windows.Forms.Button btnLevel1_4;
+        private System.Windows.Forms.Button btnLevel2_4;
+        private System.Windows.Forms.Button btnLevel2_3;
+        private System.Windows.Forms.Button btnLevel2_2;
+        private System.Windows.Forms.Button btnLevel2_1;
+        private System.Windows.Forms.Button btnLevel3_4;
+        private System.Windows.Forms.Button btnLevel3_3;
+        private System.Windows.Forms.Button btnLevel3_2;
+        private System.Windows.Forms.Button btnLevel3_1;
         private System.Windows.Forms.Panel panelLvl3;
         private System.Windows.Forms.Panel panelLvl2;
         private System.Windows.Forms.Panel panelLvl1;
