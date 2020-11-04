@@ -1,4 +1,4 @@
-﻿namespace _18002529_PROG7312_Task2
+﻿namespace _18002529_PROG7312_POE
 {
     partial class IdentifyAreas
     {

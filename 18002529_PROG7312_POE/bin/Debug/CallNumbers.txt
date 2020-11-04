@@ -1,0 +1,200 @@
+000 - Computer Science
+001 – Knowledge
+003 – Systems
+004 – Computer Sciences
+005 – Computer Programming & Data
+010 – Bibliographies
+011 – Bibliographies
+012 – Autobiographies
+014 – Bibliographies of Works from Specific Places
+016 – Bibliographies on Specific Subjects
+030 – Encyclopedias
+030 – General Encyclopedias
+032 – English Encyclopedias
+036 – Spanish & Portuguese Encyclopedias
+038 – Scandinavian Encyclopedias
+070 – News, Journalism & Publishing
+071 – American News, Journalism & Publishing
+072 – British News, Journalism & Publishing
+075 – Italian News, Journalism & Publishing
+078 – Other News, Journalism & Publishing
+110 - Metaphysics
+113 – Cosmology
+114 – Space
+115 – Time
+118 – Force & Energy
+130 – Paranormal & Occultism
+130 – Paranormal Phenomena
+131 – Occult Methods for Wellbeing
+133 – Parapsychology & occultism
+135 – Dreams & Mysteries
+150 – Psychology
+150 – General Psychology
+153 – Mental Processes & Intelligence
+155 – Differential & Developmental Psychology
+157 – Abnormal Psychology
+170 – Ethics
+170 – General Ethics
+172 – Political Ethics
+173 – Family Ethics
+174 – Economic & Professional Ethics
+220 – The Bible
+221 – Old Testament
+225 – New Testament
+226 – Gospels & Acts
+228 – Revelations (Apocalypse)
+230 – Christian Theology
+231 – God
+232 – Jesus Christ
+233 – Humankind
+234 – Salvation & Grace
+280 – Christian Denominations
+282 – Roman Catholic Church
+283 – Anglican Church
+286 – Baptist, Adventist
+287 – Methodist Church
+290 – Other Religions
+291 - Comparative Religion
+294 – Religions of Indic Region
+296 – Judaism
+297 – Islam
+300 – Sociology & Anthropology
+300 – Social Sciences
+302 – Social Interaction
+304 – Factors Affecting Social Behavior
+305 – Social Groups
+340 – Law
+341 – International Law
+342 – Constitutional & Administrative Law
+345 – Criminal Law
+347 – Criminal Procedure & Courts
+360 – Social Services
+362 – Social Welfare
+364 – Criminology
+366 – Social Association
+368 – Social Insurance
+370 – Education
+371 – School Management and Special Education
+373 – Secondary Education
+376 – Education of Women
+378 – Higher Education
+420 – English Language
+421 – English Writing System
+423 – English Dictionaries
+425 – English Grammar
+428 – Standard English Usage
+440 – Romance Language French
+441 – French Writing System
+443 – French Dictionaries
+445 – French Grammar
+447 – French Language Variations
+470 – Italian Languages Latin
+471 – Classical Latin Writing System
+473 – Classical Latin Dictionaries
+475 – Classical Latin Grammar
+477 – Old, Postclassical, Vulgar Latin
+490 – Other Languages
+491 – East Indo-European & Celtic Languages
+495 – Languages of East & Southeast Asia
+496 – African Languages
+498 – South American Native Languages
+510 – Mathematics
+512 – Algebra & Number Theory
+513 – Arithmetic
+516 – Geometry
+519 – Probability & Applied Mathematics
+550 – Earth Sciences
+551 – Geology, Hydrology, Meteorology
+552 - Petrology
+553 – Economic Geology
+555 – Earth Sciences of Africa
+570 – Life Sciences
+572 – Human Races
+574 – Biology
+575 – Evolution & Genetics
+576 – Microbiology
+590 – Zoological Sciences
+591 – Zoology
+592 – Invertebrates
+596 – Vertebrates
+599 - Mammals
+610 – Medicine & Health
+611 – Human anatomy
+613 – Promotion of Health
+615 – Pharmacology
+617 – Surgery & Related
+630 – Agriculture
+632 – Plant injuries, Diseases, Pests
+634 – Orchards, Fruits, Forestry
+635 – Horticulture
+639 – Hunting, Fishing, Conservation
+640 – Home Economics
+641 – Food & Drink
+643 – Housing & Household Equipment
+644 – Household Utilities
+646 – Sewing, Clothing, Personal Living
+690 – Buildings
+691 – Building Materials
+694 – Wood Construction – Carpentry
+695 – Roof Covering
+697 – Heating, Ventilation and Air-conditioning
+720 – Architecture
+721 – Architectural Structure
+725 – Public Structures
+726 – Religious Buildings
+729 – Design & Decoration
+740 – Drawing & Decorative Arts
+742 – Perspective
+745 – Decorative Arts
+747 – Interior Decoration
+748 - Glass
+770 – Photography
+770 – Photography & Photographs
+773 – Pigment Process of Printing
+774 – Holography
+778- Fields & Kinds of Photography
+780 – Music
+782 – Vocal Music
+784 – Instruments & Instrumental Ensembles
+785 – Chamber Music
+787 – Stringed Instruments
+810 – North American literature
+811 – North American Poetry
+813 – North American Fiction
+814 – North American Essays
+817 – North American Satire & Humor
+840 – Literatures of Romance languages
+841 – French Poetry
+843 – French Fiction
+845 – French Speeches
+846 – French Letters
+850 – Italian, Romanian literatures
+852 – Italian Drama
+853 – Italian Fiction
+855 – Italian Speeches
+857 – Italian Satire & Humor
+890 – Literatures of other languages
+891 – East Indo-European & Celtic literatures
+895 – Literatures of East & Southeast Asia
+896 – African Literatures
+898 – South American native literatures
+910 – Geography & Travel
+912 – Atlases
+914 – Europe
+915 – Asia
+917 – North America
+930 – History of Ancient World
+931 – China History
+933 – Palestine
+935 – Mesopotamia
+938 – Greek History
+940 – European History
+942 – English & Wales History
+944 – French History
+948 – Scandinavian History
+949 – Other European History
+960 – African History
+962 – Egypt & Sudan History
+963 – Ethiopian History
+965 – Algeria History
+968 – Southern Africa History
