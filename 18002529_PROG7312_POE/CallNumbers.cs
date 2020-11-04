@@ -22,6 +22,7 @@ namespace _18002529_PROG7312_POE
 
         public CallNumbers()
         {
+            //Initialising all variables 
             InitializeComponent();
 
             deweyDecimalsTree = new Tree();
@@ -41,6 +42,7 @@ namespace _18002529_PROG7312_POE
 
         private void populateTreeFromFile()
         {
+            //Creates the beginning of the tree list
             deweyDecimalsTree.Root = new TreeNode() {};
             deweyDecimalsTree.Root.Children = new List<TreeNode>();
 
@@ -59,12 +61,15 @@ namespace _18002529_PROG7312_POE
                     secondLevelIndex = 0;
                 }
 
+                //Checks if number is from main dewey level (hundreds)
                 if (deweyObject.callNumbers % 100 == 0)
                 {
                     deweyDecimalsTree.Root.Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root });
                     deweyDecimalsTree.Root.Children[mainLevelIndex].Children = new List<TreeNode>();
 
                 }
+
+                //Checks if number is from second dewey level (tens)
                 else if (deweyObject.callNumbers % 10 == 0)
                 {
                     deweyDecimalsTree.Root.Children[mainLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex]});
@@ -72,12 +77,14 @@ namespace _18002529_PROG7312_POE
                 }
                 else
                 {
+                    //Checks if a child for sub-level 0 must be created
                     if (Convert.ToInt32(line.Substring(1, 1)) == 0)
                     {
                         deweyDecimalsTree.Root.Children[mainLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex] });
                         deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex].Children = new List<TreeNode>();
                     }
 
+                    //Adds 3rd level value
                     deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex] });
                 }
             }
@@ -87,6 +94,8 @@ namespace _18002529_PROG7312_POE
         {
             Random random = new Random();
             lstQuestions.Clear();
+
+            //calls a random number and gets the description from the tree
             while(lstQuestions.Count < 10)
             {
                 DeweyObject question = new DeweyObject();
@@ -123,6 +132,7 @@ namespace _18002529_PROG7312_POE
                         Level1Categories lvl1 = new Level1Categories();
                         Dictionary<string, string> categories = lvl1.level1Numbers;
 
+                        //Determines correct category from tree search
                         string questionCategory = lstQuestions[currentQuestion].callNumbers.ToString().Substring(0, 1);
 
                         if (lstQuestions[currentQuestion].callNumbers.ToString().Length.Equals(1) || lstQuestions[currentQuestion].callNumbers.ToString().Length.Equals(2))
@@ -134,6 +144,7 @@ namespace _18002529_PROG7312_POE
 
                         Random random = new Random();
 
+                        //Adds 3 incorrect answers
                         while(callDescriptions.Count != 4)
                         {
                             int r = random.Next(10);
@@ -163,7 +174,7 @@ namespace _18002529_PROG7312_POE
                         }
                         else if (lstQuestions[currentQuestion].callNumbers.ToString().Length.Equals(2))
                         {
-                            Convert.ToInt32(lstQuestions[currentQuestion].callNumbers.ToString().Substring(0, 2));
+                            level2Category = Convert.ToInt32(lstQuestions[currentQuestion].callNumbers.ToString().Substring(0, 2));
                         }
 
                         //Adds correct answer
@@ -173,7 +184,11 @@ namespace _18002529_PROG7312_POE
 
                         while (callDescriptions.Count != 4)
                         {
-                            int r = randomL2.Next(99) * 10;
+                            int r = randomL2.Next(31) * 10;
+                            if(r < 100)
+                            {
+                                r = r * 10;
+                            }
 
                             DeweyObject obj = deweyDecimalsTree.searchLvl2(r);
 
@@ -205,9 +220,9 @@ namespace _18002529_PROG7312_POE
 
                         while(callDescriptions.Count != 4)
                         {
-                            int r = randomLvl3.Next(999);
+                            int z = randomLvl3.Next(999);
 
-                            DeweyObject obj = deweyDecimalsTree.searchLvl3(r);
+                            DeweyObject obj = deweyDecimalsTree.searchLvl3(z);
 
                             if (obj != null)
                             {
@@ -233,12 +248,13 @@ namespace _18002529_PROG7312_POE
             }
         }
 
-        private void checkAnswer(int btn, string btnText)
+        private void checkAnswer(int btn, string btnText, int level)
         {
-            switch (treeLevel)
+            //checks tree for button text depending on tree level
+            switch (level)
             {
                 case 1:
-                    string questionCategory = lstQuestions[currentQuestion].callNumbers.ToString().Substring(0, 1);
+                    string questionCategory = lstQuestions[currentQuestion].callNumbers.ToString().Substring(0,1);
 
                     if (btnText.Equals(deweyDecimalsTree.Root.Children[Convert.ToInt32(questionCategory)].Data.callNumberDesc()))
                     {
@@ -256,6 +272,7 @@ namespace _18002529_PROG7312_POE
                     break;
 
                 case 2:
+                    panelLvl3.Visible = false;
                     int level2Category = Convert.ToInt32(lstQuestions[currentQuestion].callNumbers.ToString().Substring(0, 2) + "0");
 
                     if (lstQuestions[currentQuestion].callNumbers.ToString().Length.Equals(1))
@@ -291,6 +308,9 @@ namespace _18002529_PROG7312_POE
                         txtFeedback.Text = "Wow you are clever! Next Question!";
                         currentQuestion++;
                         populateAnswers();
+
+                        panelLvl2.Visible = false;
+                        panelLvl3.Visible = false;
                     }
                     else
                     {
@@ -302,6 +322,56 @@ namespace _18002529_PROG7312_POE
 
                     break;
             }
+        }
+
+        private void btnLevel1_1_Click(object sender, EventArgs e)
+        {
+            checkAnswer(1, btnLevel1_1.Text, 1);
+        }
+
+        private void btnLevel1_2_Click(object sender, EventArgs e)
+        {
+            checkAnswer(2, btnLevel1_2.Text, 1);
+        }
+        private void btnLevel1_3_Click(object sender, EventArgs e)
+        {
+            checkAnswer(3, btnLevel1_3.Text, 1);
+        }
+        private void btnLevel1_4_Click(object sender, EventArgs e)
+        {
+            checkAnswer(4, btnLevel1_4.Text, 1);
+        }
+        private void btnLevel2_1_Click(object sender, EventArgs e)
+        {
+            checkAnswer(1, btnLevel2_1.Text, 2);
+        }
+        private void btnLevel2_2_Click(object sender, EventArgs e)
+        {
+            checkAnswer(2, btnLevel2_2.Text, 2);
+        }
+        private void btnLevel2_3_Click(object sender, EventArgs e)
+        {
+            checkAnswer(3, btnLevel2_3.Text, 2);
+        }
+        private void btnLevel2_4_Click(object sender, EventArgs e)
+        {
+            checkAnswer(4, btnLevel2_4.Text, 2);
+        }
+        private void btnLevel3_1_Click(object sender, EventArgs e)
+        {
+            checkAnswer(1, btnLevel3_1.Text, 3);
+        }
+        private void btnLevel3_2_Click(object sender, EventArgs e)
+        {
+            checkAnswer(2, btnLevel3_2.Text, 3);
+        }
+        private void btnLevel3_3_Click(object sender, EventArgs e)
+        {
+            checkAnswer(3, btnLevel3_3.Text, 3);
+        }
+        private void btnLevel3_4_Click(object sender, EventArgs e)
+        {
+            checkAnswer(4, btnLevel3_4.Text, 3);
         }
     }
 }
