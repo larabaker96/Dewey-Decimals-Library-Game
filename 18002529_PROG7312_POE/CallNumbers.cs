@@ -46,45 +46,49 @@ namespace _18002529_PROG7312_POE
             deweyDecimalsTree.Root = new TreeNode() {};
             deweyDecimalsTree.Root.Children = new List<TreeNode>();
 
-            StreamReader reader = new StreamReader("CallNumbers.txt");
-            string line;
-            while ((line = reader.ReadLine()) != null)
+            using (StreamReader reader = new StreamReader("CallNumbers.txt"))
             {
-                DeweyObject deweyObject = new DeweyObject();
-                deweyObject.callNumbers = Convert.ToInt32(line.Substring(0, 3));
-                deweyObject.description = line.Substring(6);
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    DeweyObject deweyObject = new DeweyObject();
+                    deweyObject.callNumbers = Convert.ToInt32(line.Substring(0, 3));
+                    deweyObject.description = line.Substring(6);
 
-                int mainLevelIndex = Convert.ToInt32(line.Substring(0, 1));
-                int secondLevelIndex = Convert.ToInt32(line.Substring(1, 1));
-                if(Convert.ToInt32(line.Substring(1, 2)) < 10)
-                {
-                    secondLevelIndex = 0;
-                }
+                    int mainLevelIndex = Convert.ToInt32(line.Substring(0, 1));
+                    int secondLevelIndex = Convert.ToInt32(line.Substring(1, 1));
 
-                //Checks if number is from main dewey level (hundreds)
-                if (deweyObject.callNumbers % 100 == 0)
-                {
-                    deweyDecimalsTree.Root.Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root });
-                    deweyDecimalsTree.Root.Children[mainLevelIndex].Children = new List<TreeNode>();
-                }
+                    if (deweyObject.callNumbers < 10)
+                    {
+                        mainLevelIndex = 0;
+                        secondLevelIndex = 0;
+                    }
+                    else if (deweyObject.callNumbers < 100)
+                    {
+                        mainLevelIndex = 0;
+                    }
 
-                //Checks if number is from second dewey level (tens)
-                else if (deweyObject.callNumbers % 10 == 0)
-                {
-                    deweyDecimalsTree.Root.Children[mainLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex]});
-                    deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex].Children = new List<TreeNode>();
-                }
-                else
-                {
-                    //Checks if a child for sub-level 0 must be created
-                    if (Convert.ToInt32(line.Substring(1, 1)) == 0)
+                    //Checks if number is from main dewey level (hundreds)
+                    if (line.Substring(1, 2).Equals("00"))
+                    {
+                        deweyDecimalsTree.Root.Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root });
+                        deweyDecimalsTree.Root.Children[mainLevelIndex].Children = new List<TreeNode>();
+
+                        //Creates category for values less than 010
+                        deweyDecimalsTree.Root.Children[mainLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex] });
+                        deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex].Children = new List<TreeNode>();
+                    }
+                    //Checks if number is from second dewey level (tens)
+                    else if (line.Substring(2, 1).Equals("0"))
                     {
                         deweyDecimalsTree.Root.Children[mainLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex] });
                         deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex].Children = new List<TreeNode>();
                     }
-
-                    //Adds 3rd level value
-                    deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex] });
+                    else
+                    {
+                        //Adds 3rd level value
+                        deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex].Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root.Children[mainLevelIndex].Children[secondLevelIndex] });
+                    }
                 }
             }
         }
@@ -95,13 +99,13 @@ namespace _18002529_PROG7312_POE
             lstQuestions.Clear();
 
             //calls a random number and gets the description from the tree
-            while(lstQuestions.Count < 10)
+            while(lstQuestions.Count != 10)
             {
                 DeweyObject question = new DeweyObject();
 
                 int callNumber = random.Next(0,940);
 
-                if (callNumber % 10 != 0)
+                if (!(callNumber % 10 == 0))
                 {
                     question = deweyDecimalsTree.searchLvl3(callNumber);
 

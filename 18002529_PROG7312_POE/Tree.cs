@@ -22,7 +22,7 @@ namespace _18002529_PROG7312_POE
             }
         } 
 
-        public DeweyObject searchLvl2(int data)
+        public DeweyObject searchLvl1(int data)
         {
             if (HasChildren(Root))
             {
@@ -31,6 +31,27 @@ namespace _18002529_PROG7312_POE
                     if(node.Data.callNumbers == data)
                     {
                         return node.Data;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public DeweyObject searchLvl2(int data)
+        {
+            if (HasChildren(Root))
+            {
+                foreach (TreeNode node in Root.Children)
+                {
+                    if (HasChildren(node))
+                    {
+                        foreach (TreeNode treeNode in node.Children)
+                        {
+                            if (treeNode.Data.callNumbers == data)
+                            {
+                                return treeNode.Data;
+                            }
+                        }
                     }
                 }
             }
@@ -47,10 +68,16 @@ namespace _18002529_PROG7312_POE
                     {
                         foreach (TreeNode treeNode in node.Children)
                         {
-                            if (treeNode.Data.callNumbers == data)
+                            if (HasChildren(treeNode))
                             {
-                                return treeNode.Data;
-                            }
+                                foreach(TreeNode child in treeNode.Children)
+                                {
+                                    if (child.Data.callNumbers == data)
+                                    {
+                                        return child.Data;
+                                    }
+                                }                               
+                            }                          
                         }
                     }
                 }
