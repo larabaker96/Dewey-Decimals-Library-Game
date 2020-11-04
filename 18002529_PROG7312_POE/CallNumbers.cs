@@ -318,7 +318,7 @@ namespace _18002529_PROG7312_POE
                         GlobalXP.XP = GlobalXP.XP + 10;
                         txtXP.Text = GlobalXP.XP + " xp";
 
-                        if(currentQuestion == 10)
+                        if(currentQuestion == 9)
                         {
                             txtFeedback.Text = "Congrats! Lets Play Again!";
                         }

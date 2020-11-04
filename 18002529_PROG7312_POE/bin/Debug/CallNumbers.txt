@@ -1,4 +1,4 @@
-000 - Computer Science
+000 - Computers, General & Info
 001 - Knowledge
 003 - Systems
 004 - Computer Sciences
@@ -18,7 +18,7 @@
 032 - Encyclopedias in English
 033 - Encyclopedias in other Germanic languages
 034 - Encyclopedias in French, Occitan & Catalan
-100 - Philosophy & psychology
+100 - Philosophy & Psychology
 101 - PP Theory of philosophy
 102 - PP Miscellany
 103 - PP Dictionaries & encyclopedias
@@ -138,7 +138,7 @@
 632 - Plant injuries, diseases & pests
 633 - Field & plantation crops
 634 - Orchards, fruits & forestry
-700 - The arts; fine & decorative arts
+700 - Arts, Sports & Entertainment
 701 - Philosophy of fine & decorative arts
 702 - Miscellany of fine & decorative arts
 703 - Dictionaries of fine & decorative arts
@@ -158,7 +158,7 @@
 732 - Sculpture to ca. 500
 733 - Greek, Etruscan & Roman sculpture
 734 - Sculpture from ca. 500 to 1399
-800 - Literature & rhetoric
+800 - Literature
 801 - Lit Philosophy & theory
 802 - Lit Miscellany
 803 - Lit Dictionaries & encyclopedias
@@ -183,7 +183,7 @@
 902 - HG Miscellany
 903 - HG Dictionaries & encyclopedias
 904 - HG Collected accounts of events
-910 - Geography & travel
+910 - Geography & History
 911 - Historical geography
 912 - Atlases, maps, charts & plans
 913 - Geography of & travel in ancient world
