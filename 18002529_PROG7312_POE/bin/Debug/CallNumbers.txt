@@ -19,10 +19,10 @@
 033 - Encyclopedias in other Germanic languages
 034 - Encyclopedias in French, Occitan & Catalan
 100 - Philosophy & psychology
-101 - Theory of philosophy
-102 - Miscellany
-103 - Dictionaries & encyclopedias
-105 - Serial publications
+101 - PP Theory of philosophy
+102 - PP Miscellany
+103 - PP Dictionaries & encyclopedias
+105 - PP Serial publications
 110 - Metaphysics
 111 - Ontology
 113 - Cosmology
@@ -59,7 +59,7 @@
 233 - Humankind
 234 - Salvation & Grace
 300 - Sociology & Anthropology
-300 - Social Sciences
+301 - Social Sciences
 302 - Social Interaction
 304 - Factors Affecting Social Behavior
 305 - Social Groups
@@ -68,3 +68,133 @@
 315 - General statistics of Asia
 316 - General statistics of Africa
 317 - General statistics of North America
+320 - Political science
+321 - Systems of governments & states
+322 - Relation of state to organized groups
+323 - Civil & political rights
+324 - The political process
+330 - Economics
+331 - Labor economics
+332 - Financial economics
+333 - Economics of land & energy
+334 - Cooperatives
+400 - Language
+401 - L Philosophy & theory
+402 - L Miscellany
+403 - L Dictionaries & encyclopedias
+404 - L Special topics
+410 - Linguistics
+411 - Writing systems
+412 - Etymology
+413 - Dictionaries
+414 - Phonology & phonetics
+420 - English & Old English
+421 - English writing system & phonology
+422 - English etymology
+423 - English dictionaries
+425 - English grammar
+430 - Germanic languages; German
+431 - German writing systems & phonology
+432 - German etymology
+433 - German dictionaries
+435 - German Grammar
+500 - Natural sciences & mathematics
+501 - NS Philosophy & theory
+502 - NS Miscellany
+503 - NS Dictionaries & encyclopedias
+505 - NS Serial publications
+510 - Mathematics
+512 - Algebra & Number Theory
+513 - Arithmetic
+516 - Geometry
+519 - Probability & Applied Mathematics
+520 - Astronomy & allied sciences
+521 - Celestial mechanics
+522 - Techniques, equipment & materials
+523 - Specific celestial bodies & phenomena
+525 - Earth (Astronomical geography)
+530 - Physics
+531 - Classical mechanics; solid mechanics
+532 - Fluid mechanics; liquid mechanics
+533 - Gas mechanics
+534 - Sound & related vibrations
+600 - Technology
+601 - Tech Philosophy & theory
+602 - Tech Miscellany
+603 - Tech Dictionaries & encyclopedias
+604 - Tech Special topics
+610 - Medicine & health
+611 - Human anatomy, cytology & histology
+612 - Human physiology
+613 - Personal health & safety
+614 - Incidence & prevention of disease
+620 - Engineering & allied operations
+621 - Applied physics
+622 - Mining & related operations
+623 - Military & nautical engineering
+624 - Civil engineering
+630 - Agriculture & related technologies
+631 - Techniques, equipment & materials
+632 - Plant injuries, diseases & pests
+633 - Field & plantation crops
+634 - Orchards, fruits & forestry
+700 - The arts; fine & decorative arts
+701 - Philosophy of fine & decorative arts
+702 - Miscellany of fine & decorative arts
+703 - Dictionaries of fine & decorative arts
+704 - Special topics in fine & decorative arts
+710 - Civic & landscape art
+711 - Area planning
+712 - Landscape architecture
+713 - Landscape architecture of trafficways
+714 - Water features
+720 - Architecture
+721 - Architectural structure
+722 - Architecture to ca. 300
+723 - Architecture from ca. 300 to 1399
+724 - Architecture from 1400
+730 - Plastic arts; sculpture
+731 - Processes, forms & subjects of sculpture
+732 - Sculpture to ca. 500
+733 - Greek, Etruscan & Roman sculpture
+734 - Sculpture from ca. 500 to 1399
+800 - Literature & rhetoric
+801 - Lit Philosophy & theory
+802 - Lit Miscellany
+803 - Lit Dictionaries & encyclopedias
+805 - Lit Serial publications
+810 - American literature in English
+811 - American poetry in English
+812 - American drama in English
+813 - American fiction in English
+814 - American essays in English
+820 - English & Old English literatures
+821 - English poetry
+822 - English drama
+823 - English fiction
+824 - English essays
+830 - Literatures of Germanic languages
+831 - German poetry
+832 - German drama
+833 - German fiction
+834 - German essays
+900 - History & geography
+901 - HG Philosophy & theory
+902 - HG Miscellany
+903 - HG Dictionaries & encyclopedias
+904 - HG Collected accounts of events
+910 - Geography & travel
+911 - Historical geography
+912 - Atlases, maps, charts & plans
+913 - Geography of & travel in ancient world
+914 - Geography of & travel in Europe
+920 - Biography, genealogy & insignia
+921 - Biography, genealogy & insignia Unassigned
+922 - Biography, genealogy & insignia Unassigned
+923 - Biography, genealogy & insignia Unassigned
+929 - Biography, genealogy & insignia Unassigned
+930 - History of ancient world to ca. 499
+931 - China to 420
+932 - Egypt to 640
+933 - Palestine to 70
+934 - India to 647

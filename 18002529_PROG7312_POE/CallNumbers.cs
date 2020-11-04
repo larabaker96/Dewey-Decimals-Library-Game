@@ -66,7 +66,6 @@ namespace _18002529_PROG7312_POE
                 {
                     deweyDecimalsTree.Root.Children.Add(new TreeNode() { Data = deweyObject, Parent = deweyDecimalsTree.Root });
                     deweyDecimalsTree.Root.Children[mainLevelIndex].Children = new List<TreeNode>();
-
                 }
 
                 //Checks if number is from second dewey level (tens)
@@ -100,7 +99,7 @@ namespace _18002529_PROG7312_POE
             {
                 DeweyObject question = new DeweyObject();
 
-                int callNumber = random.Next(0,999);
+                int callNumber = random.Next(0,940);
 
                 if (callNumber % 10 != 0)
                 {
@@ -184,7 +183,7 @@ namespace _18002529_PROG7312_POE
 
                         while (callDescriptions.Count != 4)
                         {
-                            int r = randomL2.Next(31) * 10;
+                            int r = randomL2.Next(94) * 10;
                             if(r < 100)
                             {
                                 r = r * 10;
@@ -220,7 +219,7 @@ namespace _18002529_PROG7312_POE
 
                         while(callDescriptions.Count != 4)
                         {
-                            int z = randomLvl3.Next(999);
+                            int z = randomLvl3.Next(940);
 
                             DeweyObject obj = deweyDecimalsTree.searchLvl3(z);
 
@@ -303,7 +302,7 @@ namespace _18002529_PROG7312_POE
 
                     if (btnText.Equals(lstQuestions[currentQuestion].callNumberDesc()))
                     {
-                        GlobalXP.XP++;
+                        GlobalXP.XP = GlobalXP.XP + 10;
                         txtXP.Text = GlobalXP.XP + " xp";
                         txtFeedback.Text = "Wow you are clever! Next Question!";
                         currentQuestion++;
