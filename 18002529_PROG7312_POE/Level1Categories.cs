@@ -22,7 +22,7 @@ namespace _18002529_PROG7312_POE
             level1Numbers.Add("600", "Technology");
             level1Numbers.Add("700", "Arts, Sports & Entertainment");
             level1Numbers.Add("800", "Literature");
-            level1Numbers.Add("900", "Geography & History");
+            level1Numbers.Add("900", "History & geography");
         }
     }
 }

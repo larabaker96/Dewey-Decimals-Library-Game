@@ -189,10 +189,10 @@
 913 - Geography of & travel in ancient world
 914 - Geography of & travel in Europe
 920 - Biography, genealogy & insignia
-921 - Biography, genealogy & insignia Unassigned
-922 - Biography, genealogy & insignia Unassigned
-923 - Biography, genealogy & insignia Unassigned
-929 - Biography, genealogy & insignia Unassigned
+921 - Biography, genealogy & insignia Unassigned1
+922 - Biography, genealogy & insignia Unassigned2
+923 - Biography, genealogy & insignia Unassigned3
+929 - Biography, genealogy & insignia Unassigned4
 930 - History of ancient world to ca. 499
 931 - China to 420
 932 - Egypt to 640
